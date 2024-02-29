@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9305537-1CB5-4537-902A-594B1FB50097}|task3\\task3.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\task3\\task3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C9305537-1CB5-4537-902A-594B1FB50097}|task3\\task3.vcxproj|solutionrelative:task3\\task3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDDB338-F10A-488F-B670-20FD59BBDCB4}|task2\\task2.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CBDDB338-F10A-488F-B670-20FD59BBDCB4}|task2\\task2.vcxproj|solutionrelative:task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7401914-2B22-417F-B81A-412AE0A016FC}|module_03\\module_03.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\module_03\\task1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E7401914-2B22-417F-B81A-412AE0A016FC}|module_03\\module_03.vcxproj|solutionrelative:module_03\\task1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "task1.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\module_03\\task1.cpp",
+              "RelativeDocumentMoniker": "module_03\\task1.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\module_03\\task1.cpp",
+              "RelativeToolTip": "module_03\\task1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-29T16:35:42.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "task2.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\task2\\task2.cpp",
+              "RelativeDocumentMoniker": "task2\\task2.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\task2\\task2.cpp",
+              "RelativeToolTip": "task2\\task2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-29T16:33:52.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "task3.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\task3\\task3.cpp",
+              "RelativeDocumentMoniker": "task3\\task3.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_03\\module_03\\task3\\task3.cpp",
+              "RelativeToolTip": "task3\\task3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-29T16:34:06.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
