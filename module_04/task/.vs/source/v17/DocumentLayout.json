@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50054D35-E935-4694-8E3B-3F2CAF08FB6E}|task2\\task2.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{50054D35-E935-4694-8E3B-3F2CAF08FB6E}|task2\\task2.vcxproj|solutionrelative:task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E152693B-7030-4B31-8FB8-D6F774F54658}|source\\source.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\source\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E152693B-7030-4B31-8FB8-D6F774F54658}|source\\source.vcxproj|solutionrelative:source\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "task2.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\task2\\task2.cpp",
+              "RelativeDocumentMoniker": "task2\\task2.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\task2\\task2.cpp",
+              "RelativeToolTip": "task2\\task2.cpp",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAmwI4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-06T12:44:08.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "source.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\source\\source.cpp",
+              "RelativeDocumentMoniker": "source\\source.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\module_04\\task1\\source\\source.cpp",
+              "RelativeToolTip": "source\\source.cpp",
+              "ViewState": "AQIAADwAAAAAAAAAAADwv08AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-06T12:21:48.481Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
