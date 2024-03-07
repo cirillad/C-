@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED994EBC-9B9E-4D23-8359-BFC5323CAA86}|task1.2\\task1.2.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\task1.2\\task1.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED994EBC-9B9E-4D23-8359-BFC5323CAA86}|task1.2\\task1.2.vcxproj|solutionrelative:task1.2\\task1.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7E201B-F841-4047-A27F-477F82B49AB4}|module_08\\module_08.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\module_08\\tasl1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EF7E201B-F841-4047-A27F-477F82B49AB4}|module_08\\module_08.vcxproj|solutionrelative:module_08\\tasl1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84976791-E988-4B52-B46F-4B4F62092EE4}|task2\\task2.vcxproj|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{84976791-E988-4B52-B46F-4B4F62092EE4}|task2\\task2.vcxproj|solutionrelative:task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\test\\test\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "task1.2.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\task1.2\\task1.2.cpp",
+              "RelativeDocumentMoniker": "task1.2\\task1.2.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\task1.2\\task1.2.cpp",
+              "RelativeToolTip": "task1.2\\task1.2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T17:05:57.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\test\\test\\test.cpp",
+              "RelativeDocumentMoniker": "..\\test\\test\\test.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\test\\test\\test.cpp",
+              "RelativeToolTip": "..\\test\\test\\test.cpp",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T13:55:10.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "task2.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\task2\\task2.cpp",
+              "RelativeDocumentMoniker": "task2\\task2.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\task2\\task2.cpp",
+              "RelativeToolTip": "task2\\task2.cpp",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAK4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T13:01:41.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tasl1.cpp",
+              "DocumentMoniker": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\module_08\\tasl1.cpp",
+              "RelativeDocumentMoniker": "module_08\\tasl1.cpp",
+              "ToolTip": "C:\\Users\\Note\\Desktop\\all\\development\\Code\\C\u002B\u002B\\test\\module_08\\module_08\\tasl1.cpp",
+              "RelativeToolTip": "module_08\\tasl1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T12:59:26.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

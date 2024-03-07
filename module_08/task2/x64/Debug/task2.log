@@ -1,0 +1,4 @@
+﻿  task2.cpp
+C:\Users\Note\Desktop\all\development\Code\C++\test\module_08\task2\task2.cpp(156,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Note\Desktop\all\development\Code\C++\test\module_08\task2\task2.cpp(165,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  task2.vcxproj -> C:\Users\Note\Desktop\all\development\Code\C++\test\module_08\x64\Debug\task2.exe
