@@ -1,0 +1,4 @@
+﻿  module_11.cpp
+D:\all\development\Code\C++\module_07\module_11\module_11\module_11.cpp(188,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_07\module_11\module_11\module_11.cpp(191,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  module_11.vcxproj -> D:\all\development\Code\C++\module_07\module_11\x64\Debug\module_11.exe
