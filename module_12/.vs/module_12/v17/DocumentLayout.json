@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\development\\GitHub\\C\u002B\u002B\\module_12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58FA7BBB-9577-4FED-AE47-ED231A7D4D0C}|module_12\\module_12.vcxproj|D:\\development\\GitHub\\C\u002B\u002B\\module_12\\module_12\\module_12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58FA7BBB-9577-4FED-AE47-ED231A7D4D0C}|module_12\\module_12.vcxproj|solutionrelative:module_12\\module_12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "module_12.cpp",
+              "DocumentMoniker": "D:\\development\\GitHub\\C\u002B\u002B\\module_12\\module_12\\module_12.cpp",
+              "RelativeDocumentMoniker": "module_12\\module_12.cpp",
+              "ToolTip": "D:\\development\\GitHub\\C\u002B\u002B\\module_12\\module_12\\module_12.cpp",
+              "RelativeToolTip": "module_12\\module_12.cpp",
+              "ViewState": "AQIAABoAAAAAAAAAAAAlwKcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-17T10:26:11.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
