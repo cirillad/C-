@@ -1,0 +1,9 @@
+﻿  module_15.cpp
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(15,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(22,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(47,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(54,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(73,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(101,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\all\development\Code\C++\module_15\module_15\module_15\module_15.cpp(117,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  module_15.vcxproj -> D:\all\development\Code\C++\module_15\module_15\x64\Debug\module_15.exe
