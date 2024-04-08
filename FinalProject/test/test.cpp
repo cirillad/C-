@@ -233,18 +233,20 @@ int main() {
 
     };
 
+    char filename[50];
+
     do {
         cout << endl;
         cout << "----- MENU -----" << endl;
-        cout << "[1] - Search by title " << endl;
-        cout << "[2] - Search by author " << endl;
-        cout << "[3] - Search by year " << endl;
-        cout << "[4] - The highest rated " << endl;
+        cout << "[1] - Open file " << endl;
+        cout << "[2] - Save file " << endl;
+        cout << "[3] - Add a book " << endl;
+        cout << "[4] - Modify data " << endl;
         cout << "[5] - Show all " << endl;
-        cout << "[6] - Modify data " << endl;
-        cout << "[7] - Write to file " << endl;
-        cout << "[8] - Load from file " << endl;
-        cout << "[9] - Add a book " << endl;
+        cout << "[6] - Search by title " << endl;
+        cout << "[7] - Search by author " << endl;
+        cout << "[8] - Search by year " << endl;
+        cout << "[9] - The highest rated " << endl;
         cout << "[0] - Exit " << endl;
         cout << "----------------" << endl;
 
@@ -254,99 +256,9 @@ int main() {
         cin.ignore();
 
         switch (choice) {
+
+
         case 1: {
-            char title[50];
-
-            cout << "Enter title of book: " << endl;
-            cin.getline(title, 50);
-
-            SearchByTitle(books, size, title);
-
-            break;
-        }
-
-        case 2: {
-            char author[50];
-
-            cout << "Enter author's name: " << endl;
-            cin.getline(author, 50);
-
-            SearchByAuthor(books, size, author);
-
-            break;
-        }
-
-        case 3: {
-            int year;
-
-            cout << "Enter the year: " << endl;
-            cin >> year;
-
-            SearchByYear(books, size, year);
-
-            break;
-        }
-
-        case 4: {
-            TheHighestRated(books, size);
-            break;
-        }
-
-        case 5: {
-            ShowAll(books, size);
-            break;
-        }
-
-        case 6: {
-            int id;
-
-            cout << "Enter ID: " << endl;
-            cin >> id;
-            cin.ignore();
-
-            ModifyData(books, size, id);
-
-            break;
-        }
-
-        case 7: {
-            char filename[50];
-
-            cout << "[1] - Fantasy.txt\n[2] - Horror.txt\n[3] - Romance.txt\n[4] - ScienceFiction.txt\n[5] - Drama.txt\n";
-
-            int fileChoice;
-            cout << "Enter the number of the file: ";
-            cin >> fileChoice;
-
-            switch (fileChoice) {
-            case 1:
-                strcpy_s(filename, sizeof(filename), "Fantasy.txt");
-                break;
-            case 2:
-                strcpy_s(filename, sizeof(filename), "Horror.txt");
-                break;
-            case 3:
-                strcpy_s(filename, sizeof(filename), "Romance.txt");
-                break;
-            case 4:
-                strcpy_s(filename, sizeof(filename), "ScienceFiction.txt");
-                break;
-            case 5:
-                strcpy_s(filename, sizeof(filename), "Drama.txt");
-                break;
-            default:
-                cerr << "Invalid file choice" << endl;
-                return 0;
-            }
-
-            SaveToFile(books, size, filename);
-            break;
-        }
-
-
-        case 8: {
-            char filename[50];
-
             cout << "[1] - Fantasy.txt\n[2] - Horror.txt\n[3] - Romance.txt\n[4] - ScienceFiction.txt\n[5] - Drama.txt\n";
 
             int fileChoice;
@@ -378,9 +290,68 @@ int main() {
             break;
         }
 
+        case 2: {
+            SaveToFile(books, size, filename);
+            break;
+        }
+
+        case 3: {
+            AddBook(books, size);
+            break;
+        }
+
+        case 4: {
+            int id;
+
+            cout << "Enter ID: " << endl;
+            cin >> id;
+            cin.ignore();
+
+            ModifyData(books, size, id);
+
+            break;
+        }
+
+        case 5: {
+            ShowAll(books, size);
+            break;
+        }
+
+        case 6: {
+            char title[50];
+
+            cout << "Enter title of book: " << endl;
+            cin.getline(title, 50);
+
+            SearchByTitle(books, size, title);
+
+            break;
+        }
+
+        case 7: {
+            char author[50];
+
+            cout << "Enter author's name: " << endl;
+            cin.getline(author, 50);
+
+            SearchByAuthor(books, size, author);
+
+            break;
+        }
+
+        case 8: {
+            int year;
+
+            cout << "Enter the year: " << endl;
+            cin >> year;
+
+            SearchByYear(books, size, year);
+
+            break;
+        }
 
         case 9: {
-            AddBook(books, size);
+            TheHighestRated(books, size);
             break;
         }
 
