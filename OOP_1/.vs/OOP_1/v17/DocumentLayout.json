@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\all\\development\\Code\\C\u002B\u002B\\test\\OOP_1\\",
+  "WorkspaceRootPath": "D:\\development\\GitHub\\C\u002B\u002B\\OOP_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78F2351F-15DD-436B-8635-C30CB5AA9D6B}|OOP_1.vcxproj|D:\\all\\development\\Code\\C\u002B\u002B\\test\\OOP_1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{78F2351F-15DD-436B-8635-C30CB5AA9D6B}|OOP_1.vcxproj|D:\\development\\GitHub\\C\u002B\u002B\\OOP_1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{78F2351F-15DD-436B-8635-C30CB5AA9D6B}|OOP_1.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "D:\\all\\development\\Code\\C\u002B\u002B\\test\\OOP_1\\main.cpp",
+              "DocumentMoniker": "D:\\development\\GitHub\\C\u002B\u002B\\OOP_1\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\all\\development\\Code\\C\u002B\u002B\\test\\OOP_1\\main.cpp",
+              "ToolTip": "D:\\development\\GitHub\\C\u002B\u002B\\OOP_1\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAnAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAACQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-14T19:33:34.679Z",
               "EditorCaption": ""
