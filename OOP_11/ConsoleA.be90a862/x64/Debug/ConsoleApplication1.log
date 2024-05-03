@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1.cpp
+D:\all\development\Code\C++\test\ConsoleApplication1\ConsoleApplication1.cpp(48,16): warning C4244: 'return': conversion from 'const double' to 'int', possible loss of data
+D:\all\development\Code\C++\test\ConsoleApplication1\ConsoleApplication1.cpp(91,31): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\all\development\Code\C++\test\ConsoleApplication1\ConsoleApplication1.cpp(220,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\all\development\Code\C++\test\ConsoleApplication1\ConsoleApplication1.cpp(248,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  ConsoleApplication1.vcxproj -> D:\all\development\Code\C++\test\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
