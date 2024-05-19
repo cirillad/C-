@@ -1,0 +1,3 @@
+﻿  qwerty.cpp
+D:\all\development\Code\C++\test\qwerty\qwerty.cpp(62,26): warning C4101: 'e': unreferenced local variable
+  qwerty.vcxproj -> D:\all\development\Code\C++\test\qwerty\x64\Debug\qwerty.exe
