@@ -30,6 +30,7 @@ public:
     void setRating(float _rating) { rating = _rating; }
 
     void show() const {
+        cout << "ID : " << id << endl;
         cout << "Title : " << title << endl;
         cout << "Author : " << author << endl;
         cout << "Year : " << year << endl;
@@ -150,6 +151,7 @@ public:
                 file << book.getAuthor() << endl;
                 file << book.getYear() << endl;
                 file << book.getRating() << endl;
+                file << endl;
             }
             cout << "Data saved to file: " << fileName << endl;
         }
@@ -190,7 +192,6 @@ public:
 
         ifstream file(fileName);
         if (file.is_open()) {
-            books.clear();
             int id, year;
             float rating;
             string title, author;
@@ -206,6 +207,20 @@ public:
         }
         else {
             cerr << "Unable to open file: " << fileName << endl;
+        }
+    }
+
+    void deleteBook(int id) {
+        auto it = std::find_if(books.begin(), books.end(), [id](const Book& book) {
+            return book.getId() == id;
+            });
+
+        if (it != books.end()) {
+            books.erase(it);
+            cout << "Book with ID " << id << " deleted successfully." << endl;
+        }
+        else {
+            cout << "Book with ID " << id << " not found." << endl;
         }
     }
 };
@@ -225,6 +240,7 @@ int main() {
         cout << "6. Show the highest rated book" << endl;
         cout << "7. Save to file" << endl;
         cout << "8. Load from file" << endl;
+        cout << "9. Delete a book" << endl;
         cout << "0. Exit" << endl;
         cout << "----------------" << endl;
         cout << "Enter your choice: ";
@@ -244,7 +260,7 @@ int main() {
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
             }
-            cin.ignore(); // Clear input buffer
+            cin.ignore();
 
             cout << "Title: ";
             getline(cin, title);
@@ -310,6 +326,13 @@ int main() {
         case 8:
             library.loadFromFile();
             break;
+        case 9: {
+            int id;
+            cout << "Enter the ID of the book you want to delete: ";
+            cin >> id;
+            library.deleteBook(id);
+            break;
+        }
         case 0:
             cout << "Exiting..." << endl;
             break;

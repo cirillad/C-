@@ -1,5 +1,42 @@
+84720337
+Harry Potter and the Philosopher's Stone
+J.K. Rowling
+1997
+4.5
+
+9780439
+Harry Potter and the Chamber of Secrets
+J.K. Rowling
+1998
+4.4
+
+9780439
+Harry Potter and the Prisoner of Azkaban
+J.K. Rowling
+1999
+4.6
+
+9780439
+Harry Potter and the Goblet of Fire
+J.K. Rowling
+2000
+4.7
+
+9780439
+Harry Potter and the Order of the Phoenix
+J.K. Rowling
+2003
+4.5
+
 1
-13414
-142
-134
-44
+1
+1
+1
+1
+
+2
+2
+2
+2
+2
+
