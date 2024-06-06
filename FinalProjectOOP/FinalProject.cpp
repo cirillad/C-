@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
-#include <conio.h> // Для _kbhit() і _getch()
+#include <conio.h>
 
 using namespace std;
 
@@ -137,18 +137,18 @@ public:
             }
 
             int key = _getch();
-            if (key == 224) { // Спеціальна клавіша
+            if (key == 224) { 
                 key = _getch();
                 switch (key) {
-                case 72: // Стрілка вгору
+                case 72: 
                     selected = (selected - 1 + numItems) % numItems;
                     break;
-                case 80: // Стрілка вниз
+                case 80:
                     selected = (selected + 1) % numItems;
                     break;
                 }
             }
-            else if (key == 13) { // Enter
+            else if (key == 13) {
                 break;
             }
         }
@@ -180,7 +180,7 @@ public:
                 file << book.getAuthor() << endl;
                 file << book.getYear() << endl;
                 file << book.getRating() << endl;
-                file << endl; // Пустий рядок після кожної книги
+                file << endl;
             }
             cout << "Data saved to file: " << fileName << endl;
         }
@@ -212,18 +212,18 @@ public:
             }
 
             int key = _getch();
-            if (key == 224) { // Спеціальна клавіша
+            if (key == 224) { 
                 key = _getch();
                 switch (key) {
-                case 72: // Стрілка вгору
+                case 72: 
                     selected = (selected - 1 + numItems) % numItems;
                     break;
-                case 80: // Стрілка вниз
+                case 80: 
                     selected = (selected + 1) % numItems;
                     break;
                 }
             }
-            else if (key == 13) { // Enter
+            else if (key == 13) {
                 break;
             }
         }
@@ -283,7 +283,7 @@ public:
 };
 
 void displayMenu(int selected) {
-    system("cls"); // Очистити екран, на UNIX системах використовуйте "clear"
+    system("cls");
     string menuItems[] = {
         "1. Add a book",
         "2. Show all books",
@@ -317,18 +317,18 @@ int main() {
         displayMenu(selected);
 
         int key = _getch();
-        if (key == 224) { // Спеціальна клавіша
+        if (key == 224) {
             key = _getch();
             switch (key) {
-            case 72: // Стрілка вгору
+            case 72:
                 selected = (selected - 1 + 10) % 10;
                 break;
-            case 80: // Стрілка вниз
+            case 80:
                 selected = (selected + 1) % 10;
                 break;
             }
         }
-        else if (key == 13) { // Enter
+        else if (key == 13) {
             switch (selected) {
             case 0: {
                 int id, year;
@@ -337,12 +337,12 @@ int main() {
 
                 cout << "Enter book details:" << endl;
                 cout << "ID: ";
-                while (!(cin >> id)) {
-                    cout << "Invalid input. Please enter a valid ID (numeric value): ";
+                while (!(cin >> id) || id < 0 || id > 5) {
+                    cout << "Invalid input. Please enter a valid ID (numeric value from 0 to 5): ";
                     cin.clear();
                     cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 }
-                cin.ignore(); // Clear input buffer
+                cin.ignore();
 
                 cout << "Title: ";
                 getline(cin, title);
