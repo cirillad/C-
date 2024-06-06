@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <conio.h> // Для _kbhit() і _getch()
 
 using namespace std;
 
@@ -114,28 +115,56 @@ public:
     }
 
     void saveToFile() const {
-        int choice;
+        const string menuItems[] = {
+            "1 - fantasy",
+            "2 - horror",
+            "3 - science",
+            "4 - thriller"
+        };
+        const int numItems = 4;
+
+        int selected = 0;
+        while (true) {
+            system("cls");
+            cout << "Select the file to save to:" << endl;
+            for (int i = 0; i < numItems; i++) {
+                if (i == selected) {
+                    cout << "> " << menuItems[i] << " <" << endl;
+                }
+                else {
+                    cout << menuItems[i] << endl;
+                }
+            }
+
+            int key = _getch();
+            if (key == 224) { // Спеціальна клавіша
+                key = _getch();
+                switch (key) {
+                case 72: // Стрілка вгору
+                    selected = (selected - 1 + numItems) % numItems;
+                    break;
+                case 80: // Стрілка вниз
+                    selected = (selected + 1) % numItems;
+                    break;
+                }
+            }
+            else if (key == 13) { // Enter
+                break;
+            }
+        }
+
         string fileName;
-
-        cout << "Select the file to save to:" << endl;
-        cout << "1 - fantasy" << endl;
-        cout << "2 - horror" << endl;
-        cout << "3 - science" << endl;
-        cout << "4 - thriller" << endl;
-        cout << "Enter your choice: ";
-        cin >> choice;
-
-        switch (choice) {
-        case 1:
+        switch (selected) {
+        case 0:
             fileName = "fantasy.txt";
             break;
-        case 2:
+        case 1:
             fileName = "horror.txt";
             break;
-        case 3:
+        case 2:
             fileName = "science.txt";
             break;
-        case 4:
+        case 3:
             fileName = "thriller.txt";
             break;
         default:
@@ -151,7 +180,7 @@ public:
                 file << book.getAuthor() << endl;
                 file << book.getYear() << endl;
                 file << book.getRating() << endl;
-                file << endl;
+                file << endl; // Пустий рядок після кожної книги
             }
             cout << "Data saved to file: " << fileName << endl;
         }
@@ -161,28 +190,56 @@ public:
     }
 
     void loadFromFile() {
-        int choice;
+        const string menuItems[] = {
+            "1 - fantasy",
+            "2 - horror",
+            "3 - science",
+            "4 - thriller"
+        };
+        const int numItems = 4;
+
+        int selected = 0;
+        while (true) {
+            system("cls");
+            cout << "Select the file to load from:" << endl;
+            for (int i = 0; i < numItems; i++) {
+                if (i == selected) {
+                    cout << "> " << menuItems[i] << " <" << endl;
+                }
+                else {
+                    cout << menuItems[i] << endl;
+                }
+            }
+
+            int key = _getch();
+            if (key == 224) { // Спеціальна клавіша
+                key = _getch();
+                switch (key) {
+                case 72: // Стрілка вгору
+                    selected = (selected - 1 + numItems) % numItems;
+                    break;
+                case 80: // Стрілка вниз
+                    selected = (selected + 1) % numItems;
+                    break;
+                }
+            }
+            else if (key == 13) { // Enter
+                break;
+            }
+        }
+
         string fileName;
-
-        cout << "Select the file to load from:" << endl;
-        cout << "1 - fantasy" << endl;
-        cout << "2 - horror" << endl;
-        cout << "3 - science" << endl;
-        cout << "4 - thriller" << endl;
-        cout << "Enter your choice: ";
-        cin >> choice;
-
-        switch (choice) {
-        case 1:
+        switch (selected) {
+        case 0:
             fileName = "fantasy.txt";
             break;
-        case 2:
+        case 1:
             fileName = "horror.txt";
             break;
-        case 3:
+        case 2:
             fileName = "science.txt";
             break;
-        case 4:
+        case 3:
             fileName = "thriller.txt";
             break;
         default:
@@ -225,122 +282,147 @@ public:
     }
 };
 
+void displayMenu(int selected) {
+    system("cls"); // Очистити екран, на UNIX системах використовуйте "clear"
+    string menuItems[] = {
+        "1. Add a book",
+        "2. Show all books",
+        "3. Search by title",
+        "4. Search by author",
+        "5. Search by year",
+        "6. Show the highest rated book",
+        "7. Save to file",
+        "8. Load from file",
+        "9. Delete a book",
+        "0. Exit"
+    };
+
+    for (int i = 0; i < 10; i++) {
+        if (i == selected) {
+            cout << "> " << menuItems[i] << " <" << endl;
+        }
+        else {
+            cout << menuItems[i] << endl;
+        }
+    }
+}
+
 int main() {
     string filename = "library.txt";
     BookLibrary library(filename);
 
-    int choice;
+    int selected = 0;
+
     do {
-        cout << "\n----- MENU -----" << endl;
-        cout << "1. Add a book" << endl;
-        cout << "2. Show all books" << endl;
-        cout << "3. Search by title" << endl;
-        cout << "4. Search by author" << endl;
-        cout << "5. Search by year" << endl;
-        cout << "6. Show the highest rated book" << endl;
-        cout << "7. Save to file" << endl;
-        cout << "8. Load from file" << endl;
-        cout << "9. Delete a book" << endl;
-        cout << "0. Exit" << endl;
-        cout << "----------------" << endl;
-        cout << "Enter your choice: ";
-        cin >> choice;
-        cin.ignore();
+        displayMenu(selected);
 
-        switch (choice) {
-        case 1: {
-            int id, year;
-            float rating;
-            string title, author;
-
-            cout << "Enter book details:" << endl;
-            cout << "ID: ";
-            while (!(cin >> id)) {
-                cout << "Invalid input. Please enter a valid ID (numeric value): ";
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        int key = _getch();
+        if (key == 224) { // Спеціальна клавіша
+            key = _getch();
+            switch (key) {
+            case 72: // Стрілка вгору
+                selected = (selected - 1 + 10) % 10;
+                break;
+            case 80: // Стрілка вниз
+                selected = (selected + 1) % 10;
+                break;
             }
-            cin.ignore();
+        }
+        else if (key == 13) { // Enter
+            switch (selected) {
+            case 0: {
+                int id, year;
+                float rating;
+                string title, author;
 
-            cout << "Title: ";
-            getline(cin, title);
-            while (title.empty()) {
-                cout << "Title cannot be empty. Please enter a valid title: ";
+                cout << "Enter book details:" << endl;
+                cout << "ID: ";
+                while (!(cin >> id)) {
+                    cout << "Invalid input. Please enter a valid ID (numeric value): ";
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                }
+                cin.ignore(); // Clear input buffer
+
+                cout << "Title: ";
                 getline(cin, title);
-            }
+                while (title.empty()) {
+                    cout << "Title cannot be empty. Please enter a valid title: ";
+                    getline(cin, title);
+                }
 
-            cout << "Author: ";
-            getline(cin, author);
-            while (author.empty()) {
-                cout << "Author cannot be empty. Please enter a valid author: ";
+                cout << "Author: ";
                 getline(cin, author);
-            }
+                while (author.empty()) {
+                    cout << "Author cannot be empty. Please enter a valid author: ";
+                    getline(cin, author);
+                }
 
-            cout << "Year: ";
-            while (!(cin >> year)) {
-                cout << "Invalid input. Please enter a valid year (numeric value): ";
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            }
+                cout << "Year: ";
+                while (!(cin >> year)) {
+                    cout << "Invalid input. Please enter a valid year (numeric value): ";
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                }
 
-            cout << "Rating: ";
-            while (!(cin >> rating)) {
-                cout << "Invalid input. Please enter a valid rating (numeric value): ";
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            }
+                cout << "Rating: ";
+                while (!(cin >> rating)) {
+                    cout << "Invalid input. Please enter a valid rating (numeric value): ";
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                }
 
-            library.addBook(Book(id, title, author, year, rating));
-            break;
+                library.addBook(Book(id, title, author, year, rating));
+                break;
+            }
+            case 1:
+                library.showAllBooks();
+                break;
+            case 2: {
+                string title;
+                cout << "Enter title to search: ";
+                getline(cin, title);
+                library.searchByTitle(title);
+                break;
+            }
+            case 3: {
+                string author;
+                cout << "Enter author to search: ";
+                getline(cin, author);
+                library.searchByAuthor(author);
+                break;
+            }
+            case 4: {
+                int year;
+                cout << "Enter year to search: ";
+                cin >> year;
+                library.searchByYear(year);
+                break;
+            }
+            case 5:
+                library.showHighestRated();
+                break;
+            case 6:
+                library.saveToFile();
+                break;
+            case 7:
+                library.loadFromFile();
+                break;
+            case 8: {
+                int id;
+                cout << "Enter the ID of the book you want to delete: ";
+                cin >> id;
+                library.deleteBook(id);
+                break;
+            }
+            case 9:
+                cout << "Exiting..." << endl;
+                return 0;
+            }
+            cout << "Press any key to return to menu...";
+            _getch();
         }
-        case 2:
-            library.showAllBooks();
-            break;
-        case 3: {
-            string title;
-            cout << "Enter title to search: ";
-            getline(cin, title);
-            library.searchByTitle(title);
-            break;
-        }
-        case 4: {
-            string author;
-            cout << "Enter author to search: ";
-            getline(cin, author);
-            library.searchByAuthor(author);
-            break;
-        }
-        case 5: {
-            int year;
-            cout << "Enter year to search: ";
-            cin >> year;
-            library.searchByYear(year);
-            break;
-        }
-        case 6:
-            library.showHighestRated();
-            break;
-        case 7:
-            library.saveToFile();
-            break;
-        case 8:
-            library.loadFromFile();
-            break;
-        case 9: {
-            int id;
-            cout << "Enter the ID of the book you want to delete: ";
-            cin >> id;
-            library.deleteBook(id);
-            break;
-        }
-        case 0:
-            cout << "Exiting..." << endl;
-            break;
-        default:
-            cout << "Invalid choice. Please try again." << endl;
-            break;
-        }
-    } while (choice != 0);
+    } while (true);
 
     return 0;
 }

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\development\\GitHub\\C\u002B\u002B\\FinalProjectOOP\\",
+  "WorkspaceRootPath": "D:\\all\\development\\Code\\C\u002B\u002B\\finalProjectOOP\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65B3B40A-94BD-4FFA-8B19-7669F197FF0B}|FinalProject.vcxproj|D:\\development\\GitHub\\C\u002B\u002B\\FinalProjectOOP\\FinalProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{65B3B40A-94BD-4FFA-8B19-7669F197FF0B}|FinalProject.vcxproj|D:\\all\\development\\Code\\C\u002B\u002B\\finalProjectOOP\\FinalProject\\FinalProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{65B3B40A-94BD-4FFA-8B19-7669F197FF0B}|FinalProject.vcxproj|solutionrelative:FinalProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FinalProject.cpp",
-              "DocumentMoniker": "D:\\development\\GitHub\\C\u002B\u002B\\FinalProjectOOP\\FinalProject.cpp",
+              "DocumentMoniker": "D:\\all\\development\\Code\\C\u002B\u002B\\finalProjectOOP\\FinalProject\\FinalProject.cpp",
               "RelativeDocumentMoniker": "FinalProject.cpp",
-              "ToolTip": "D:\\development\\GitHub\\C\u002B\u002B\\FinalProjectOOP\\FinalProject.cpp",
+              "ToolTip": "D:\\all\\development\\Code\\C\u002B\u002B\\finalProjectOOP\\FinalProject\\FinalProject.cpp",
               "RelativeToolTip": "FinalProject.cpp",
-              "ViewState": "AQIAADMBAAAAAAAAAAAAAEYBAAAjAAAA",
+              "ViewState": "AQIAADQBAAAAAAAAAAAAAEoBAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-05T12:10:28.355Z",
               "EditorCaption": ""
